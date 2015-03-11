@@ -1,0 +1,22 @@
+using MySql.Data.MySqlClient;
+ 
+-----
+
+class Program    {
+        public static string db ="server=localhost;database=sitemap;uid=root;password=";
+
+----
+ MySqlConnection con = new MySqlConnection(db);
+                con.Open(); 
+                MySqlCommand qr = new MySqlCommand("SELECT * FROM sites WHERE statys=1 ", con);
+                MySqlDataReader reader = qr.ExecuteReader();
+ -------
+
+while (reader.Read())
+                {
+
+//exam 
+                  list.Add(reader.GetString("url")); // url - colum
+                }
+----
+    con.Close();
