@@ -10,9 +10,7 @@ namespace XMLParser
     {
         static void Main(string[] args)
         {
-            var parser =
-                new XMLParser(
-                    "../../Sample-Vendor-Expenses.xml");
+            var parser = new XMLParser("../../Sample-Vendor-Expenses.xml");
             parser.SaveExpensesDataToDB();
         }
     }
