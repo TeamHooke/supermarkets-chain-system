@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4aa483ce5b024d6d9913348500b473aa" Name="Diagram1">
+        <EntityTypeShape EntityType="SupermarketsModel.Measure" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketsModel.Product" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketsModel.Supermarket_Sales" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketsModel.SupermarketProduct" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketsModel.Supermarket" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketsModel.Vendor" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="SupermarketsModel.FK_Products_Measures" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketsModel.FK_Products_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketsModel.FK_Supermarket_Sales_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketsModel.FK_SupermarketProducts_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketsModel.FK_Supermarket_Sales_Supermarkets" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketsModel.FK_SupermarketProducts_Supermarkets" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SupermarketsModel.Expense" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="SupermarketsModel.FK_Expenses_Vendors" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

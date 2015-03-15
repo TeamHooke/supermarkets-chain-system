@@ -1,0 +1,10 @@
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\bin\Debug\XMLParser.exe.config
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\obj\Debug\XMLParser.csprojResolveAssemblyReference.cache
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\bin\Debug\XMLParser.exe
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\bin\Debug\XMLParser.pdb
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\bin\Debug\EntityFramework.dll
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\bin\Debug\EntityFramework.xml
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\obj\Debug\XMLParser.exe
+C:\Users\Reath\Documents\Visual Studio 2013\Projects\Supermarkets\XMLParser\obj\Debug\XMLParser.pdb
