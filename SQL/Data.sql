@@ -1,3 +1,5 @@
+USE Supermarkets
+GO
 BEGIN TRAN
 	INSERT INTO Measures (Name)
 		VALUES 
