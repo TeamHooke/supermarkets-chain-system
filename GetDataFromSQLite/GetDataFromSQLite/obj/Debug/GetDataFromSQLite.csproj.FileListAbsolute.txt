@@ -1,0 +1,1 @@
+C:\Users\Zhan\Documents\supermarkets-chain-system\GetDataFromSQLite\GetDataFromSQLite\bin\Debug\GetDataFromSQLite.exe.config
