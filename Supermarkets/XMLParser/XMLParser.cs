@@ -41,7 +41,7 @@ namespace XMLParser
                     {
                         var date = DateTime.ParseExact(expense.Attributes["month"].Value, "MMM-yyyy",
                             CultureInfo.InvariantCulture);
-                        var money = decimal.Parse(expense.InnerText);
+                        var money = decimal.Parse(expense.InnerText, CultureInfo.InvariantCulture);
                         db.Expenses.Add(new Expense()
                         {
                             Date = date,
