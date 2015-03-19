@@ -1,9 +1,6 @@
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\Supermarkets.Client.exe.config
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\Supermarkets.Client.exe
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\Supermarkets.Client.pdb
-C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\EntityFramework.dll
-C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\MySql.Data.dll
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\Supermarkets.Data.dll
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\Supermarkets.ExportSQLDnToMySQLDb.dll
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\Supermarkets.LoadXMLData.dll
@@ -23,3 +20,9 @@ C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermark
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\obj\Debug\Supermarkets.Client.csprojResolveAssemblyReference.cache
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\obj\Debug\Supermarkets.Client.exe
 C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\obj\Debug\Supermarkets.Client.pdb
+C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\EntityFramework.dll
+C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\MySql.Data.dll
+C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\SQLData.dll
+C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\SQLData.pdb
+C:\Users\Zhan\documents\visual studio 2013\Projects\SupermarketsSystem\Supermarkets.Client\bin\Debug\mysql.data.entity.EF6.dll

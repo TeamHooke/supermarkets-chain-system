@@ -1,11 +1,12 @@
-using Supermarkets.Data;
+
+using SQLData;
 
 namespace ExportSQLDBToMySQlDB
 {
     //using System.ComponentModel.DataAnnotations.Schema;
 
     //[Table("Expences")]
-    public class MySqlExpense : Expens
+    public class MySqlExpense : Expense
     {
     }
 }

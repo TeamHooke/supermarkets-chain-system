@@ -1,4 +1,4 @@
-using Supermarkets.Data;
+using SQLData;
 
 namespace ExportSQLDBToMySQlDB
 {

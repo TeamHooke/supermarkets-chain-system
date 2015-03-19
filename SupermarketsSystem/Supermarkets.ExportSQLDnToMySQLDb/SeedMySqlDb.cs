@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using ExportSQLDBToMySQlDB;
+using SQLData;
 using Supermarkets.Data;
 
 namespace Supermarkets.ExportSQLDnToMySQLDb
@@ -11,13 +12,13 @@ namespace Supermarkets.ExportSQLDnToMySQLDb
             SupermarketsEntities contextSql = new SupermarketsEntities();
             SupermarketsDbMySql contextMySql = new SupermarketsDbMySql();
 
-            var vendors = contextSql.Vendors.ToList().Select(v => new Vendor
+            var vendors = contextSql.Vendors.ToList().Select(v => new MySqlVendor
             {
                 Id = v.Id,
                 Name = v.Name
             }).ToList();
 
-            var measures = contextSql.Measures.ToList().Select(measure => new Measure
+            var measures = contextSql.Measures.ToList().Select(measure => new MySqlMeasure
             {
                 Id = measure.Id,
                 Name = measure.Name
@@ -33,7 +34,7 @@ namespace Supermarkets.ExportSQLDnToMySQLDb
                 Income = product.SupermarketProducts.Average(p => p.UnitPrice) - product.Price
             }).ToList();
 
-            var expenses = contextSql.Expenses.ToList().Select(e => new Expens
+            var expenses = contextSql.Expenses.ToList().Select(e => new MySqlExpense
             {
                 Id = e.Id,
                 Date = e.Date,
@@ -41,13 +42,13 @@ namespace Supermarkets.ExportSQLDnToMySQLDb
                 VendorId = e.VendorId
             }).ToList();
 
-            var supermarkets = contextSql.Supermarkets.ToList().Select(s => new Supermarket
+            var supermarkets = contextSql.Supermarkets.ToList().Select(s => new MySqlSupermarket
             {
                 Id = s.Id,
                 Location = s.Location
             }).ToList();
 
-            var supermarketProducts = contextSql.SupermarketProducts.ToList().Select(p => new SupermarketProduct
+            var supermarketProducts = contextSql.SupermarketProducts.ToList().Select(p => new MySqlSupermarketProduct
             {
                 Id = p.Id,
                 ProductId = p.ProductId,
@@ -55,7 +56,7 @@ namespace Supermarkets.ExportSQLDnToMySQLDb
                 UnitPrice = p.UnitPrice
             }).ToList();
 
-            var supermarketSales = contextSql.Supermarket_Sales.ToList().Select(s => new Supermarket_Sales
+            var supermarketSales = contextSql.Supermarket_Sales.ToList().Select(s => new MySqlSupermarketSale
             {
                 Id = s.Id,
                 ProductId = s.ProductId,

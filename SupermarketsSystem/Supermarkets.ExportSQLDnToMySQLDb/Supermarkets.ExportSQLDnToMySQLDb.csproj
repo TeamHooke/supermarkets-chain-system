@@ -64,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SQLData\SQL.Data.csproj">
+      <Project>{e3ddf651-4617-4fad-a56c-e12c7f9a42e1}</Project>
+      <Name>SQL.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Supermarkets.Data\Supermarkets.Data.csproj">
       <Project>{ede880b8-6dec-45c3-a756-dc5abf851276}</Project>
       <Name>Supermarkets.Data</Name>
