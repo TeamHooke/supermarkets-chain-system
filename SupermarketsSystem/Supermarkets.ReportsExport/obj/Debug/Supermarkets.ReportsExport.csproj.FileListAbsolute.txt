@@ -1,0 +1,14 @@
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\obj\Debug\Supermarkets.ReportsExport.csprojResolveAssemblyReference.cache
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Supermarkets.ReportsExport.dll.config
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Supermarkets.ReportsExport.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Supermarkets.ReportsExport.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\EntityFramework.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Supermarkets.Data.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Supermarkets.Data.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\EntityFramework.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\obj\Debug\Supermarkets.ReportsExport.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\obj\Debug\Supermarkets.ReportsExport.pdb

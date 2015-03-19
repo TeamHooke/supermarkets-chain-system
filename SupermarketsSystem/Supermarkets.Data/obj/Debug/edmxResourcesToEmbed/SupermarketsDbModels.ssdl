@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SupermarketsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Expenses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Money" Type="money" />
+    <Property Name="VendorId" Type="int" />
+  </EntityType>
+  <EntityType Name="Measures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="VendorId" Type="int" Nullable="false" />
+    <Property Name="MeasureId" Type="int" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supermarket_Sales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SupermarketId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="CountOfSales" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SupermarketProducts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="SupermarketId" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supermarkets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Location" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vendors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Expenses_Vendors">
+    <End Role="Vendors" Type="Self.Vendors" Multiplicity="0..1" />
+    <End Role="Expenses" Type="Self.Expenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendors">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Expenses">
+        <PropertyRef Name="VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Measures">
+    <End Role="Measures" Type="Self.Measures" Multiplicity="1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Measures">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="MeasureId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Vendors">
+    <End Role="Vendors" Type="Self.Vendors" Multiplicity="1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendors">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supermarket_Sales_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="Supermarket_Sales" Type="Self.Supermarket_Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Supermarket_Sales">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supermarket_Sales_Supermarkets">
+    <End Role="Supermarkets" Type="Self.Supermarkets" Multiplicity="1" />
+    <End Role="Supermarket_Sales" Type="Self.Supermarket_Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supermarkets">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Supermarket_Sales">
+        <PropertyRef Name="SupermarketId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SupermarketProducts_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="SupermarketProducts" Type="Self.SupermarketProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SupermarketProducts">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SupermarketProducts_Supermarkets">
+    <End Role="Supermarkets" Type="Self.Supermarkets" Multiplicity="1" />
+    <End Role="SupermarketProducts" Type="Self.SupermarketProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supermarkets">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SupermarketProducts">
+        <PropertyRef Name="SupermarketId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SupermarketsModelStoreContainer">
+    <EntitySet Name="Expenses" EntityType="Self.Expenses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Measures" EntityType="Self.Measures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supermarket_Sales" EntityType="Self.Supermarket_Sales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupermarketProducts" EntityType="Self.SupermarketProducts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supermarkets" EntityType="Self.Supermarkets" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vendors" EntityType="Self.Vendors" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Expenses_Vendors" Association="Self.FK_Expenses_Vendors">
+      <End Role="Vendors" EntitySet="Vendors" />
+      <End Role="Expenses" EntitySet="Expenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Measures" Association="Self.FK_Products_Measures">
+      <End Role="Measures" EntitySet="Measures" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Vendors" Association="Self.FK_Products_Vendors">
+      <End Role="Vendors" EntitySet="Vendors" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supermarket_Sales_Products" Association="Self.FK_Supermarket_Sales_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Supermarket_Sales" EntitySet="Supermarket_Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supermarket_Sales_Supermarkets" Association="Self.FK_Supermarket_Sales_Supermarkets">
+      <End Role="Supermarkets" EntitySet="Supermarkets" />
+      <End Role="Supermarket_Sales" EntitySet="Supermarket_Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SupermarketProducts_Products" Association="Self.FK_SupermarketProducts_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="SupermarketProducts" EntitySet="SupermarketProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SupermarketProducts_Supermarkets" Association="Self.FK_SupermarketProducts_Supermarkets">
+      <End Role="Supermarkets" EntitySet="Supermarkets" />
+      <End Role="SupermarketProducts" EntitySet="SupermarketProducts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

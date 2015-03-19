@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SupermarketsModelStoreContainer" CdmEntityContainer="SupermarketsSqlEntities">
+    <EntitySetMapping Name="Expenses">
+      <EntityTypeMapping TypeName="SupermarketsModel.Expense">
+        <MappingFragment StoreEntitySet="Expenses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Measures">
+      <EntityTypeMapping TypeName="SupermarketsModel.Measure">
+        <MappingFragment StoreEntitySet="Measures">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="SupermarketsModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="MeasureId" ColumnName="MeasureId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupermarketSales">
+      <EntityTypeMapping TypeName="SupermarketsModel.SupermarketSale">
+        <MappingFragment StoreEntitySet="Supermarket_Sales">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SupermarketId" ColumnName="SupermarketId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="CountOfSales" ColumnName="CountOfSales" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupermarketProducts">
+      <EntityTypeMapping TypeName="SupermarketsModel.SupermarketProduct">
+        <MappingFragment StoreEntitySet="SupermarketProducts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="SupermarketId" ColumnName="SupermarketId" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supermarkets">
+      <EntityTypeMapping TypeName="SupermarketsModel.Supermarket">
+        <MappingFragment StoreEntitySet="Supermarkets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vendors">
+      <EntityTypeMapping TypeName="SupermarketsModel.Vendor">
+        <MappingFragment StoreEntitySet="Vendors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

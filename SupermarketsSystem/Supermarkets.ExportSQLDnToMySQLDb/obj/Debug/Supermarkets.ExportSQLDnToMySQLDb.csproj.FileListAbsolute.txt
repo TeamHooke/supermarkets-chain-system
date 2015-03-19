@@ -1,0 +1,12 @@
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\Supermarkets.ExportSQLDnToMySQLDb.dll.config
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\Supermarkets.ExportSQLDnToMySQLDb.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\Supermarkets.ExportSQLDnToMySQLDb.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\EntityFramework.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\EntityFramework.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\obj\Debug\Supermarkets.ExportSQLDnToMySQLDb.csprojResolveAssemblyReference.cache
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\obj\Debug\Supermarkets.ExportSQLDnToMySQLDb.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\obj\Debug\Supermarkets.ExportSQLDnToMySQLDb.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\Supermarkets.Data.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ExportSQLDnToMySQLDb\bin\Debug\Supermarkets.Data.pdb

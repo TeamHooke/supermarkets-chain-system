@@ -1,0 +1,10 @@
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\bin\Debug\Supermarkets.Data.dll.config
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\bin\Debug\Supermarkets.Data.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\bin\Debug\Supermarkets.Data.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\bin\Debug\EntityFramework.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\bin\Debug\EntityFramework.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\obj\Debug\Supermarkets.Data.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\obj\Debug\Supermarkets.Data.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.Data\obj\Debug\Supermarkets.Data.csprojResolveAssemblyReference.cache

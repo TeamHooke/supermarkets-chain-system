@@ -1,0 +1,14 @@
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\obj\Debug\Supermarkets.ToPDFExport.csprojResolveAssemblyReference.cache
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\Supermarkets.ToPDFExport.dll.config
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\Supermarkets.ToPDFExport.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\Supermarkets.ToPDFExport.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\EntityFramework.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\itextsharp.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\Supermarkets.Data.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\Supermarkets.Data.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\EntityFramework.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\bin\Debug\itextsharp.xml
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\obj\Debug\Supermarkets.ToPDFExport.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ToPDFExport\obj\Debug\Supermarkets.ToPDFExport.pdb
