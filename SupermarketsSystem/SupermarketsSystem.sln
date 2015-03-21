@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarkets.Client", "Supe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQL.Data", "SQLData\SQL.Data.csproj", "{E3DDF651-4617-4FAD-A56C-E12C7F9A42E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarkets.FinancialReport", "Supermarkets.FinancialReport\Supermarkets.FinancialReport.csproj", "{85B2D2A2-3D21-4D4D-B5EB-929275712C34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E3DDF651-4617-4FAD-A56C-E12C7F9A42E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3DDF651-4617-4FAD-A56C-E12C7F9A42E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3DDF651-4617-4FAD-A56C-E12C7F9A42E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B2D2A2-3D21-4D4D-B5EB-929275712C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B2D2A2-3D21-4D4D-B5EB-929275712C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B2D2A2-3D21-4D4D-B5EB-929275712C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B2D2A2-3D21-4D4D-B5EB-929275712C34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

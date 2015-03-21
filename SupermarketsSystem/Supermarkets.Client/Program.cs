@@ -9,6 +9,7 @@ using Supermarkets.LoadXMLData;
 using Supermarkets.ToPDFExport;
 using Supermarkets.ReportsExport;
 using Supermarkets.ExportSQLDnToMySQLDb;
+using Supermarkets.FinancialReport;
 
 namespace Supermarkets.Client
 {
@@ -41,14 +42,16 @@ namespace Supermarkets.Client
 
             //JSONExporter.WriteToJSON(context, new DateTime(2014, 1, 1), new DateTime(2015, 12, 12));
 
-            try
-            {
-                SeedMySqlDb.Seed();
-            }
-            catch (MySqlException)
-            {
-                SeedMySqlDb.Seed();
-            }
+            //try
+            //{
+            //    SeedMySqlDb.Seed();
+            //}
+            //catch (MySqlException)
+            //{
+            //    SeedMySqlDb.Seed();
+            //}
+
+            ExcelExporter.GenerateReport();
         }
     }
 }

@@ -1,38 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PDFSalesReports;
+﻿
+    <add name="SupermarketsSqlEntities" connectionString="metadata=res://*/SupermarketsSQLEntities.csdl|res://*/SupermarketsSQLEntities.ssdl|res://*/SupermarketsSQLEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=Supermarkets;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
 
-namespace XMLParser
-{
-    class StartPoint
-    {
-        static void Main(string[] args)
-        {
-            var parser = new XMLParser("../../Sample-Vendor-Expenses.xml");
-            parser.SaveExpensesDataToDB();
-
-
-            // pdf export
-            Console.WriteLine("Report Between dates in format <MM.dd.yyyy>");
-            Console.Write("First date: ");
-            var startDate = DateTime.Parse(Console.ReadLine());
-            Console.Write("Second date: ");
-            var endDate = DateTime.Parse(Console.ReadLine());
-
-            if (startDate > endDate)
-            {
-                throw new ArgumentException("Start date is bigger than end date you looking for");
-            }
-
-            ToPDF.CreateAndStylePdf(startDate, endDate);
-            
-            // mysql export
-            MySQLExport.ConnectToMySQLDb();
-            MySQLExport.FillDataIntoMySQLDb();
-            MySQLExport.DisconnectFromMySQLDb();
-        }
-    }
-}
+	
+	  <MySQL>
+    <Replication>
+      <ServerGroups>
+        <Group name="Fabric" groupType="MySql.Fabric.FabricServerGroup, MySql.Fabric.Plugin">
+          <Servers>
+            <Server name="fabric" connectionstring="server=localhost;port=;uid=;password=;" />
+          </Servers>
+        </Group>
+      </ServerGroups>
+    </Replication>
+  </MySQL>
