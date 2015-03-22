@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQL.Data", "SQLData\SQL.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarkets.FinancialReport", "Supermarkets.FinancialReport\Supermarkets.FinancialReport.csproj", "{85B2D2A2-3D21-4D4D-B5EB-929275712C34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarkets.ClientWF", "Supermarkets.ClientWF\Supermarkets.ClientWF.csproj", "{57DEA326-34CC-49F5-AD82-7F550961CB61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarkets.TextBoxWriter", "Supermarkets.TextBoxWriter\Supermarkets.TextBoxWriter.csproj", "{D425BC19-0F6D-4723-9225-67F8998F37BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{85B2D2A2-3D21-4D4D-B5EB-929275712C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85B2D2A2-3D21-4D4D-B5EB-929275712C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85B2D2A2-3D21-4D4D-B5EB-929275712C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57DEA326-34CC-49F5-AD82-7F550961CB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DEA326-34CC-49F5-AD82-7F550961CB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DEA326-34CC-49F5-AD82-7F550961CB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DEA326-34CC-49F5-AD82-7F550961CB61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D425BC19-0F6D-4723-9225-67F8998F37BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D425BC19-0F6D-4723-9225-67F8998F37BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D425BC19-0F6D-4723-9225-67F8998F37BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D425BC19-0F6D-4723-9225-67F8998F37BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

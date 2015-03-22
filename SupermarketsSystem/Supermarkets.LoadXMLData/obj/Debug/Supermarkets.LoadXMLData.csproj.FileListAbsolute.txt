@@ -10,3 +10,5 @@ C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermark
 C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.LoadXMLData\obj\Debug\Supermarkets.LoadXMLData.csprojResolveAssemblyReference.cache
 C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.LoadXMLData\obj\Debug\Supermarkets.LoadXMLData.dll
 C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.LoadXMLData\obj\Debug\Supermarkets.LoadXMLData.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.LoadXMLData\bin\Debug\Supermarkets.TextBoxWriter.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.LoadXMLData\bin\Debug\Supermarkets.TextBoxWriter.pdb

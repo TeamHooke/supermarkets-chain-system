@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.IO;
 using System.Reflection;
 using ExportSQLDBToMySQlDB;
 using NetOffice.ExcelApi.Enums;
-using SQLData;
 using TestSqlite;
 using Excel = NetOffice.ExcelApi;
 

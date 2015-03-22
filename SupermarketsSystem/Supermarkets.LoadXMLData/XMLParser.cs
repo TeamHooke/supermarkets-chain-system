@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using Supermarkets.Data;
+using System.Windows.Forms;
+using Supermarkets.ClientWF;
 
 namespace Supermarkets.LoadXMLData
 {
@@ -20,8 +22,10 @@ namespace Supermarkets.LoadXMLData
             path = pathToXML;
         }
 
-        public void SaveExpensesDataToDB()
+        public void SaveExpensesDataToDB(TextBox txtBox)
         {
+            Console.SetOut(new TextBoxWriter(txtBox));
+            
             XmlDocument doc = new XmlDocument();
             doc.Load(path);
 
