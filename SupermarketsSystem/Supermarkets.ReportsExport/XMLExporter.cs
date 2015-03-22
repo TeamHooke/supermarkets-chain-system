@@ -5,15 +5,18 @@ using System.Globalization;
 using System.Xml;
 using System.Data.Entity;
 using System.Linq;
+using Supermarkets.ClientWF;
 using Supermarkets.Data;
+using System.Windows.Forms;
 
 namespace Supermarkets.ReportsExport
 {
     public static class XMLExporter 
     {
         public static void WriteToXml(SupermarketsEntities db,
-            DateTime startDate,DateTime endDate)
+            DateTime startDate,DateTime endDate, TextBox txtBox)
         {
+            Console.SetOut(new TextBoxWriter(txtBox));
 
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Encoding = Encoding.UTF8;
@@ -43,16 +46,17 @@ namespace Supermarkets.ReportsExport
                 {
                     writer.WriteStartElement("sale");
                     writer.WriteAttributeString("vendor", v.Name);
-
+                    var totalSum = "";
                     foreach (var s in v.Sales)
                     {
                         writer.WriteStartElement("summary");
                         writer.WriteAttributeString("date", s.Date.ToString("dd-MMM-yyyy",CultureInfo.InvariantCulture));
-                        writer.WriteAttributeString("total-sum", 
-                            decimal.Round(s.Product.Price * s.CountOfSales,2)
-                            .ToString(CultureInfo.InvariantCulture));
+                         totalSum = decimal.Round(s.Product.Price*s.CountOfSales, 2)
+                            .ToString(CultureInfo.InvariantCulture);
+                        writer.WriteAttributeString("total-sum", totalSum);
                         writer.WriteEndElement();
                     }
+                    Console.WriteLine("Vendor {0} was added with total sum {1}", v.Name, totalSum);
                     writer.WriteEndElement();
                 }
                 writer.WriteEndElement();

@@ -6,15 +6,18 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Data;
 using System.Xml;
+using Supermarkets.ClientWF;
 using Supermarkets.Data;
+using System.Windows.Forms;
 
 namespace Supermarkets.ReportsExport
 {
     public static class JSONExporter
     {
         public static void WriteToJSON(SupermarketsEntities db,
-          DateTime startDate, DateTime endDate)
+          DateTime startDate, DateTime endDate, TextBox txtBox)
         {
+            Console.SetOut(new TextBoxWriter(txtBox));
 
              var sales =  from p in db.Products 
                           join v in db.Vendors on p.VendorId equals v.Id
@@ -49,6 +52,7 @@ namespace Supermarkets.ReportsExport
                     JSONsale.Add("total-quantity-sold", sale.TotalQuantitySold);
                     JSONsale.Add("total-income", decimal.Round(sale.TotalIncomes,2));
                     string json = JsonConvert.SerializeObject(JSONsale, Newtonsoft.Json.Formatting.Indented);
+                    Console.WriteLine(json);
                     file.WriteLine(json);
                 }
             }

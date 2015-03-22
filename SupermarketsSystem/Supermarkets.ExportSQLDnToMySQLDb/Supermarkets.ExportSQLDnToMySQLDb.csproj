@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,6 +72,10 @@
     <ProjectReference Include="..\Supermarkets.Data\Supermarkets.Data.csproj">
       <Project>{ede880b8-6dec-45c3-a756-dc5abf851276}</Project>
       <Name>Supermarkets.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Supermarkets.TextBoxWriter\Supermarkets.TextBoxWriter.csproj">
+      <Project>{d425bc19-0f6d-4723-9225-67f8998f37be}</Project>
+      <Name>Supermarkets.TextBoxWriter</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,3 +12,5 @@ C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermark
 C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\obj\Debug\Supermarkets.ReportsExport.dll
 C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\obj\Debug\Supermarkets.ReportsExport.pdb
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Supermarkets.TextBoxWriter.dll
+C:\Users\Zhan\Documents\Visual Studio 2013\Projects\SupermarketsSystem\Supermarkets.ReportsExport\bin\Debug\Supermarkets.TextBoxWriter.pdb

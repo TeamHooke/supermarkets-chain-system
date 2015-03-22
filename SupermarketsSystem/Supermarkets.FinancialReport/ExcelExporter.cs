@@ -8,12 +8,19 @@ using ExportSQLDBToMySQlDB;
 using NetOffice.ExcelApi.Enums;
 using TestSqlite;
 using Excel = NetOffice.ExcelApi;
+using System.Windows.Forms;
+using Supermarkets.ClientWF;
 
 namespace Supermarkets.FinancialReport
 {
-    public static class ExcelExporter
+    public class ExcelExporter
     {
-        public static void GenerateReport()
+        public ExcelExporter(TextBox txtBox)
+        {
+            Console.SetOut(new TextBoxWriter(txtBox));
+        }
+
+        public void GenerateReport()
         {
             Excel.Application excelApplication = new Excel.Application();
 
@@ -132,14 +139,17 @@ namespace Supermarkets.FinancialReport
             var value = new string[reportResult.Length, 5];
             for (var row = 0; row < reportResult.Length; row++)
             {
+                Console.WriteLine("Importing:\n---------------");
                 for (int col = 0; col < reportResult[row].Length; col++)
                 {               
                     value[row, col] = reportResult[row][col];
+                    Console.WriteLine(reportResult[row][col]);
                 }
             }
             var range = sheet.Range(sheet.Cells[4, 1],
                 sheet.Cells[reportResult.Length + 3, reportResult[1].Length]);
             range.Value = value;
+            Console.WriteLine("Ready!!!");
         }
 
     }

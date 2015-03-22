@@ -1,14 +1,19 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using ExportSQLDBToMySQlDB;
 using SQLData;
+using Supermarkets.ClientWF;
 using Supermarkets.Data;
+using System.Windows.Forms;
 
 namespace Supermarkets.ExportSQLDnToMySQLDb
 {
     public static class SeedMySqlDb
     {
-        public static void Seed()
+        public static void Seed(TextBox txtBox)
         {
+            Console.SetOut(new TextBoxWriter(txtBox));
+
             SupermarketsEntities contextSql = new SupermarketsEntities();
             SupermarketsDbMySql contextMySql = new SupermarketsDbMySql();
 
@@ -66,12 +71,19 @@ namespace Supermarkets.ExportSQLDnToMySQLDb
             }).ToList();
 
             contextMySql.Vendors.AddRange(vendors);
+            Console.WriteLine("Vendors added.");
             contextMySql.Measures.AddRange(measures);
+            Console.WriteLine("Measures added.");
             contextMySql.Expenses.AddRange(expenses);
+            Console.WriteLine("Expenses added.");
             contextMySql.Products.AddRange(products);
+            Console.WriteLine("Products added.");
             contextMySql.SupermarketProducts.AddRange(supermarketProducts);
+            Console.WriteLine("SupermarketProducts added.");
             contextMySql.Supermarkets.AddRange(supermarkets);
+            Console.WriteLine("Supermarkets added.");
             contextMySql.SupermarketSales.AddRange(supermarketSales);
+            Console.WriteLine("SupermarketSales added.");
 
             contextMySql.SaveChangesAsync();
         }
